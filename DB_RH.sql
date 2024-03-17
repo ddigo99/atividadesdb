@@ -18,6 +18,6 @@ VALUES
 ('Ana', 'Oliveira', 'Assistente Administrativo', 1800.00, 'Administração'),
 ('Luiza', 'Costa', 'Engenheiro de Produção', 22000.00, 'Produção');
 
-SELECT * FROM colaboradores WHERE salario > 2000;
+SELECT * FROM colaboradores WHERE salario > 5000;
 
 UPDATE colaboradores SET salario = 2300.00 WHERE id = 4;

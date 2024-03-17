@@ -1,0 +1,1 @@
+UPDATE produtos SET quantidade_estoque = 30 WHERE id = 2;

@@ -1,3 +1,4 @@
+use db_escola;
 CREATE TABLE estudantes (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
@@ -7,7 +8,7 @@ CREATE TABLE estudantes (
     endereco VARCHAR(200)
 );
 INSERT INTO estudantes (nome, idade, curso, nota, endereco) VALUES
-('João Silva', 18, 'Matemática', 8.5, 'Rua A, nº 123'),
+('João Silva', 18, 'Matemática', 8.5, 'Rua A, nº 120'),
 ('Maria Santos', 17, 'História', 6.8, 'Avenida B, nº 456'),
 ('Pedro Souza', 20, 'Ciências', 9.2, 'Rua C, nº 789'),
 ('Ana Oliveira', 19, 'Artes', 7.5, 'Rua D, nº 1011'),
@@ -16,7 +17,7 @@ INSERT INTO estudantes (nome, idade, curso, nota, endereco) VALUES
 ('Rafael Santos', 20, 'Física', 7.1, 'Rua G, nº 1617'),
 ('Fernanda Lima', 19, 'Química', 9.5, 'Avenida H, nº 1819');
 
-SELECT * FROM estudantes WHERE nota > 7.0;
-SELECT * FROM estudantes WHERE nota < 7.0;
+SELECT * FROM estudantes WHERE nota > 8.0;
+SELECT * FROM estudantes WHERE nota < 8.0;
 
 UPDATE estudantes SET endereco = 'Rua X, nº 999' WHERE id = 2;
